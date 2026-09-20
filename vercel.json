@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "node -e \"console.log('Static SIMO Studio ready')\"",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/player/:token*",
+      "destination": "/player.html"
+    }
+  ]
+}
